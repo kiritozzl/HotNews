@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--android:layout_margin="2dp" 这个设置是关键-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="2dp"
+            android:background="@drawable/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:textColor="#185ed7"
+                    android:textStyle="bold"
+                    android:text="title"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/source"
+                    android:textSize="15sp"
+                    android:textColor="#11a775"
+                    android:text="source"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/type"
+                    android:textSize="15sp"
+                    android:text="type"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:textSize="15sp"
+                    android:text="date"
+                    android:textStyle="italic"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+</FrameLayout>
